@@ -17,6 +17,7 @@ import DataBindingStyle from '@/views/DataBindingStyle.vue'
 import DataBindingStyle2 from '@/views/DataBindingStyle2.vue'
 import DataBindingList from '@/views/DataBindingList.vue'
 import RenderingVIf from '@/views/RenderingVIf.vue'
+import EventClick from '@/views/EventClick.vue'
 
 const routes = [
   {
@@ -116,6 +117,11 @@ const routes = [
     path: '/renderingvif',
     name: 'RenderingVIf',
     component: RenderingVIf
+  },
+  {
+    path: '/eventclick',
+    name: 'EventClick',
+    component: EventClick
   }
 ]
 
