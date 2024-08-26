@@ -1,5 +1,9 @@
 import axios from "axios";
 
+axios.defaults.baseURL = 'http://localhost:3000';   // 서버주소
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+
 export default {
     methods: {
         async $api(url, method, data) {
@@ -11,5 +15,11 @@ export default {
                 console.log(e);
             })).data;
         }
+    },
+    mounted() {
+        console.log('믹스인 mounted');
+    },
+    unmounted() {
+        console.log('믹스인 unmounted');
     }
 }

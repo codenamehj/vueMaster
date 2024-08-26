@@ -26,6 +26,18 @@ import DataBindingList2 from '@/views/DataBindingList2.vue'
 import NestedComponent from '@/views/NestedComponent.vue'
 import ParentComponent from '@/views/ParentComponent.vue'
 import ParentComponent2 from '@/views/ParentComponent2.vue'
+import ParentComponent3 from '@/views/ParentComponent3.vue'
+import ParentComponent4 from '@/views/ParentComponent4.vue'
+import ParentComponent5 from '@/views/ParentComponent5.vue'
+import Calculator from '@/views/Calculator.vue'
+import CompositionAPI from '@/views/CompositionAPI.vue'
+import CompositionAPI2 from '@/views/CompositionAPI2.vue'
+import CompositionAPI3 from '@/views/CompositionAPI3.vue'
+import CompositionAPI4 from '@/views/CompositionAPI4.vue'
+import CompositionAPIProvide from '@/views/CompositionAPIProvide.vue'
+import Mixins from '@/views/Mixins.vue'
+import Plugins from '@/views/Plugins.vue'
+import StoreAccess from '@/views/StoreAccess.vue'
 
 const routes = [
   {
@@ -170,6 +182,66 @@ const routes = [
     path: '/parentcomponent2',
     name: 'ParentComponent2',
     component: ParentComponent2
+  },
+  {
+    path: '/parentcomponent3',
+    name: 'ParentComponent3',
+    component: ParentComponent3
+  },
+  {
+    path: '/parentcomponent4',
+    name: 'ParentComponent4',
+    component: ParentComponent4
+  },
+  {
+    path: '/parentcomponent5',
+    name: 'ParentComponent5',
+    component: ParentComponent5
+  },
+  {
+    path: '/calculator',
+    name: 'Calculator',
+    component: Calculator
+  },
+  {
+    path: '/compositionapi',
+    name: 'CompositionAPI',
+    component: CompositionAPI
+  },
+  {
+    path: '/compositionapi2',
+    name: 'CompositionAPI2',
+    component: CompositionAPI2
+  },
+  {
+    path: '/compositionapi3',
+    name: 'CompositionAPI3',
+    component: CompositionAPI3
+  },
+  {
+    path: '/compositionapi4',
+    name: 'CompositionAPI4',
+    component: CompositionAPI4
+  },
+  {
+    path: '/compositionapiprovide',
+    name: 'CompositionAPIProvide',
+    component: CompositionAPIProvide
+  },
+  {
+    path: '/mixins',
+    name: 'Mixins',
+    component: Mixins
+  },
+  {
+    path: '/plugins',
+    name: 'Plugins',
+    component: Plugins
+  },
+  {
+    path: '/storeaccess',
+    name: 'StoreAccess',
+    component: StoreAccess
   }
 ]
 
