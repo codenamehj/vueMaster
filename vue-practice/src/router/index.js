@@ -38,6 +38,8 @@ import CompositionAPIProvide from '@/views/CompositionAPIProvide.vue'
 import Mixins from '@/views/Mixins.vue'
 import Plugins from '@/views/Plugins.vue'
 import StoreAccess from '@/views/StoreAccess.vue'
+import KakaoLogin from '@/views/KakaoLogin.vue'
+import NaverLogin from '@/views/NaverLogin.vue'
 
 const routes = [
   {
@@ -242,6 +244,16 @@ const routes = [
     path: '/storeaccess',
     name: 'StoreAccess',
     component: StoreAccess
+  },
+  {
+    path: '/login',
+    name: 'KakaoLogin',
+    component: KakaoLogin
+  },
+  {
+    path: '/naverlogin',
+    name: 'NaverLogin',
+    component: NaverLogin
   }
 ]
 

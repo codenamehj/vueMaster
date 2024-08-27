@@ -14,3 +14,5 @@ import mixins from './mixins'
 // i18n 플러그인에 다국어 번역 데이터를 파라미터로 전달
 createApp(App).use(router).mixin(mixins).mount('#app')
 // createApp(App).use(i18nPlugin, i18nStrings, router).mixin(mixins).mount('#app')
+
+window.Kakao.init("c1ec91e03a5db8f9fdf28e425f9eb4b0");  // 발급 받은 앱 키

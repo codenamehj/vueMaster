@@ -7,13 +7,16 @@ module.exports = {
   chainWebpack: config => {
     config.plugins.delete('prefetch'); // prefetch 삭제
   },
-  devServer:{
-    port:8081,
-    proxy:{
+  devServer: {
+    port: 8081,
+    proxy: {
       // proxy 요청을 보낼 api 시작 부분
-      '^/api':{
+      '^/api': {
         target,
         changeOrigin: true
+      },
+      '/oauth2.0': {
+        target: 'https://nid.naver.com'
       }
     }
   }
